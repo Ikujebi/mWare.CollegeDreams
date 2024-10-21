@@ -4,8 +4,8 @@ import {
     CarouselContent,
     CarouselItem,
 
-  } from "@/components/ui/carousel"
-  import { type CarouselApi } from "@/components/ui/carousel"
+  } from "../components/ui/carousel"
+  import { type CarouselApi } from "../components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
 type Prop =React.PropsWithChildren<{}>
