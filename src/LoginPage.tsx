@@ -7,7 +7,7 @@ import {useForm,} from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';
 import { useMutation } from "@tanstack/react-query";
-import { createAccountApi } from "@/api/auth.api";
+import { createAccountApi } from "./api/auth.api";
 import toast from "react-hot-toast";
 import { 
     // googleLogout,
