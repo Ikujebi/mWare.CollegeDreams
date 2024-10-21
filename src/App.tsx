@@ -4,13 +4,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google"
-import CreateEvent from "./page/event/CreateEvent";
+/* import CreateEvent from "./page/event/CreateEvent";
 import AllEvent from "./page/event/AllEvent";
 import Ayanfe from "./page/mark/Ayanfe";
 import EventLayout from "./layout/EventLayout";
 import EventDetail from "./page/event/EventDetail";
 import Ticket from "./page/event/Ticket";
-import { ComingSoonGreeting } from "./page/ComingSoon";
+import { ComingSoonGreeting } from "./page/ComingSoon"; */
 import {
   QueryClient,
   QueryClientProvider,
@@ -27,7 +27,7 @@ const route =createBrowserRouter([
     element:<LoginPage />,
     // errorElement:<FallbackRender/>
   },
-  {
+  /* {
     path: "/create",
     element:<CreateEvent />,
     // errorElement:<FallbackRender/>
@@ -106,7 +106,7 @@ const route =createBrowserRouter([
       <Ayanfe onNavItemClick={handleNavItemClick}/>
     ,
     // errorElement:<FallbackRender/>
-  },
+  }, */
   
 ])
 
