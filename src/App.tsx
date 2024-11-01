@@ -1,4 +1,5 @@
 import LoginPage from "./page/LoginPage"
+import LandingPage from "./page/LandingPage"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,22 +18,22 @@ import {
   // useQuery,
 } from '@tanstack/react-query'
 import { Toaster } from "react-hot-toast";
-const handleNavItemClick = (content: string) => {
-  console.log("Navigation item clicked:", content);
-  // Add your logic here (e.g., updating state or navigating)
-};
+// const handleNavItemClick = (content: string) => {
+//   console.log("Navigation item clicked:", content);
+//   // Add your logic here (e.g., updating state or navigating)
+// };
 const route =createBrowserRouter([
   {
     path: "/",
-    element:<LoginPage />,
+    element:< LandingPage/>,
     // errorElement:<FallbackRender/>
   },
-  /* {
-    path: "/create",
-    element:<CreateEvent />,
+   {
+    path: "/login",
+    element:< LoginPage />,
     // errorElement:<FallbackRender/>
   },
-  {
+    /*{
     path: "/all-event",
     element:<AllEvent />,
     // errorElement:<FallbackRender/>
