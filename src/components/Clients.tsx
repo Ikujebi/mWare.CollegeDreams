@@ -6,7 +6,7 @@ import school3 from "../assets/images/school3.png"
 const Clients = () => {
     const images = [school1,school2,school3]
   return (
-    <div className='bg-gray-100 text-gray-400 flex flex-col items-center justify-center  h-[40svh]'>
+    <div className='bg-gray-100 text-gray-400 flex flex-col items-center justify-center  h-[40svh] overflow-none'>
         
         <section>Our Trusted Clients
         </section>
@@ -23,7 +23,7 @@ const Clients = () => {
               key={index}
               src={image}
               alt={`School Image ${index + 1}`}
-              className="w-full h-[15rem] rounded-[50%]"
+              className="w-full h-[5rem] md:h-[10rem] lg:h-[10rem] xl:h-[10rem] 2xl:h-[15rem] rounded-[50%]"
             />
           ))}
         </section>
