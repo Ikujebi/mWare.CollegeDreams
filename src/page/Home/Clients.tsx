@@ -1,7 +1,7 @@
-import React from 'react'
-import school1 from "../assets/images/school1.png"
-import school2 from "../assets/images/school2.png"
-import school3 from "../assets/images/school3.png"
+
+import school1 from "../../assets/images/school1.png"
+import school2 from "../../assets/images/school2.png"
+import school3 from "../../assets/images/school3.png"
 
 const Clients = () => {
     const images = [school1,school2,school3]
