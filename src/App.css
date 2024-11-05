@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root {
     --custom-blue: #1D4ED8;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
   .nunito{
     font-family: "Nunito", sans-serif;

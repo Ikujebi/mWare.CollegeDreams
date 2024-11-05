@@ -86,10 +86,10 @@ const Testimonials: FC = () => {
         </header>
 
         <main>
-          <section className='flex'>
+          <section className='flex gap-[2rem] mt-[4rem]'>
           {chat.slice(currentIndex, currentIndex + visibleItems).map((item, i) => (
                             <div key={i} className="flex flex-col items-center w-[15rem]">
-                                <img src={item.image} alt="" className="w-full h-auto" />
+                                <img src={item.image} alt="" className="w-[12rem] h-[12rem]" />
                                 <div className="flex mt-2 text-[#FFD700]">
                                     <IoStar /><IoStar /><IoStar /><IoStar /><IoStar />
                                 </div>
