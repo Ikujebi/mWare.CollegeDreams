@@ -69,13 +69,13 @@ const Testimonials: FC = () => {
        
     ]
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         arrows: true,  // Enable or disable arrows
         responsive: [
           {
