@@ -17,7 +17,7 @@ const Clients = () => {
         <p>streamline their operations.
 
 </p>
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[5rem]">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 2xl:pt-[5rem] pt-[3rem]">
           {images.map((image, index) => (
             <img
               key={index}
