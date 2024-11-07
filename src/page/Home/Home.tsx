@@ -58,7 +58,7 @@ const Home: FC = () => {
       <section>
         <About />
       </section>
-      <section className='m-[15rem]'>
+      <section className=' '>
         <Testimonials />
       </section>
     </div>

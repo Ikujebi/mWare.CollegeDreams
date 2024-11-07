@@ -19,53 +19,47 @@ const Testimonials: FC = () => {
     const chat = [
         {
             image:  client1,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
+            testimony: '    CollegeDreams is incredibly intuitive and powerful. Since my school joined, my productivity has skyrocketed',
+            client:'- ALOTUNSIN SAMUEL (ENGR)',
+            office:  ' Admin, Air Force Secondary School, Ikeja - Lagos' ,
 
         },
         {
             image:  client2,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
+            testimony: `"Hi. I'm Laurat , a teacher by profession and a good user of Collegedreams app. Thank you Collegedreams for your efforts, resilience and boundless care for our pupils and students. Your impact cannot be measured. We are grateful for everything"`,
+            client:'- Mrs. Laurat',
+            office:  ' Admin, AFPS Kaduna' ,
 
         },
         {
             image:  client3,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
+            testimony: ' " With CollegeDreams, everything is so easy to navigate. Since my school adopted it, my productivity has seen a huge boost"',
+            client:'- Mr. Oke Segun',
+            office:  'Principal, Hebron Intl College, Lagos' ,
 
         },
         {
             image:  client4,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
+            testimony: '"I have been having the opportunity to use CollegeDreams software now as far back as 2012 and it is thoroughly impressed by its comprehensive features and user-friendly design. It is exceptionally efficient, providing clear insights into pupils performance over various periods. The grading system is robust and flexible, accommodating different grading schemes and making it easy to maintain accurate records "',
+            client:'- Mrs Bisi Kojo ',
+            office:  'Admin, AFPS Shasha - Lagos' ,
 
         },
         {
             image:  photo,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
+            testimony: `"Since my school started using CollegeDreams, I've found it extremely user-friendly and effective. My productivity has never been better!"`,
+            client:'- Mr. Anderson',
+            office:  ' Admin, AFGCS Abuja' ,
 
         },
         {
             image:  photo,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
+            testimony:  `" Ever since our school started using CollegeDreams, I've found it to be both user-friendly and highly effective"` ,
+            client:'- Flt Ltn Ezekafor ',
+            office:  'Admin, AFMS Jos' ,
 
         },
-        {
-            image:  photo,
-            testimony: ' ',
-            client:'',
-            office:  '' ,
-
-        },
+        
        
     ]
     const settings = {
@@ -91,27 +85,42 @@ const Testimonials: FC = () => {
     
 
   return (
-    <div>
+    <div className='flex justify-center w-full '>
+    <div className='   mt-[15rem] w-[60rem] 2xl:w-[80rem]'>
     <header className='flex flex-col justify-center items-center'>
         <h1 className='text-3xl'>Testimonials</h1>
         <p className='text-gray-400 mt-7'>What our clients said about <span className='text-customBlue font-semibold'>CollegeDreams</span> Project.</p>
         </header>
 
-        <main className='mt-[3rem]'>
+        <main className='mt-[3rem] '>
         <Slider {...settings}>
-          {chat.map((item, index) => (
-            <div key={index} className="flex flex-col items-center w-[15rem]">
-              <img src={item.image} alt="" className="w-[12rem] h-[12rem]" />
-              <div className="flex mt-2 text-[#FFD700]">
-                <IoStar /><IoStar /><IoStar /><IoStar /><IoStar />
+          {chat.map((item, i) => (
+          <div key={i} className='flex flex-col items-center justify-center gap-1 pb-[4rem]'>
+          <div className='flex  w-[3.5rem]'>
+              <img src={item.image} alt="" className='w-[3rem] h-[3rem] object-cover rounded-full' />
+          </div>
+          <div className='bg-gray-100 ml-[3.5rem] rounded-lg shadow-lg pl-1'>
+                  <div className="flex  -mt-[3rem] text-[#FFD700] text-[1rem]">
+                    <IoStar /><IoStar /><IoStar /><IoStar /><IoStar />
+                  </div>
+                  <div className='mt-4 max-w-xs '>
+                    <p className='text-gray-700 text-sm'>{item.testimony}</p>
+                  </div>
+                  <div className='mt-4 max-w-xs '>
+                    <p className='text-gray-700 text-sm'> <span className='text-customBlue font-semibold'>{item.client}</span> {item.office}</p>
+                  </div>
+                </div>
               </div>
-            </div>
           ))}
         </Slider>
         </main>
         <footer></footer>
     </div>
+    </div>
   )
 }
 
 export default Testimonials
+
+
+
