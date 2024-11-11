@@ -4,6 +4,7 @@ import laptop from "../../assets/images/laptopdashboard.png";
 import Clients from "./Clients";
 import About from './About'
 import Testimonials from './Testimonials';
+import Contact from './Contact';
 const Home: FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -60,6 +61,9 @@ const Home: FC = () => {
       </section>
       <section className=' '>
         <Testimonials />
+      </section>
+      <section className=' '>
+        <Contact />
       </section>
     </div>
   );
