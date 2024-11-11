@@ -59,7 +59,7 @@ const Contact: FC = () => {
           </div>
           </div>
         </section>
-        <section className='w-[40%] flex justify-center'>
+        <section className='w-[50%] flex justify-center'>
           <div className='flex flex-col gap-5 p-[2rem] rounded-md border border-gray-100'>
 <div className='flex gap-5  '>
 <div>
