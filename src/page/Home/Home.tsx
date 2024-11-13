@@ -5,6 +5,7 @@ import Clients from "./Clients";
 import About from './About'
 import Testimonials from './Testimonials';
 import Contact from './Contact';
+import Footer from './Footer';
 const Home: FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -64,6 +65,9 @@ const Home: FC = () => {
       </section>
       <section className=' '>
         <Contact />
+      </section>
+      <section className=' '>
+        <Footer />
       </section>
     </div>
   );
