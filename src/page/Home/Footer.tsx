@@ -9,7 +9,7 @@ const Footer: FC  = () => {
     <div className='w-screen flex justify-center transition-all duration-300  bg-[#2E3440] h-[22rem] items-center'>
       <div className='w-[60rem] flex justify-between my-[1rem] '>
         <section className='w-[30%]'>
-        <article className=' flex gap-2'>
+        <article className=' flex gap-2 pb-10 items-center'>
             <img src={logo} alt="my logo" className=' w-[2.6rem] h-[2.9rem] rounded-[50%]' />
             <h1 className='mt-1 text-[1.3rem] text-customBlue  font-semibold'>CollegeDreams</h1>
         </article>
