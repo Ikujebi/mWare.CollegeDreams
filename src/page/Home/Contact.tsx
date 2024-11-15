@@ -105,7 +105,7 @@ const Contact: FC = () => {
 </div>
         </section>
         </main>
-        <footer className='bg-customBlue flex justify-around items-center h-[11rem] rounded-xl'>
+        <footer className='bg-blue-600 flex justify-around items-center h-[11rem] rounded-xl'>
           <div>
 <h2 className='text-white text-3xl mb-[1.3rem]'>Sign up with CollegeDreams today</h2>
 <span className=' text-gray-400 bg-blue-800 shadow-xl pr-1 '>Empowering Education, One Click at a Time.</span>

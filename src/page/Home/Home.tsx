@@ -6,22 +6,41 @@ import About from './About'
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
+import { FaArrowUp } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
+
+
 const Home: FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsScrolled(true);
+      
     } else {
       setIsScrolled(false);
     }
   };
 
+  const scrollToNextSection = () => {
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+  };
+
+ 
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+  
 
+    // Cleanup listeners
     return () => {
       window.removeEventListener('scroll', handleScroll);
+
     };
   }, []);
 
@@ -69,6 +88,16 @@ const Home: FC = () => {
       <section className=' '>
         <Footer />
       </section>
+
+      {isScrolled && (
+        <button
+          onClick={isScrolled ? scrollToTop : scrollToNextSection}
+          className="fixed bottom-8 right-8 bg-customBlue text-white p-3 rounded-lg shadow-lg hover:bg-blue-600 transition"
+          aria-label={isScrolled ? "Scroll to Top" : "Scroll Down"}
+        >
+          {isScrolled ? <FaArrowUp /> : <FaArrowDown />}
+        </button>
+      )}
     </div>
   );
 }

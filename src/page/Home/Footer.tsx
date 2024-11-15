@@ -1,10 +1,15 @@
 import logo from '../../assets/images/logo.png'
 import { FC } from 'react';
 import { AiOutlineMail } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 
 
 const Footer: FC  = () => {
+
+  const icon=[FaFacebookF,FaInstagram,FaXTwitter,AiOutlineMail]
   return (
     <div className='w-screen flex justify-center transition-all duration-300  bg-[#2E3440] h-[22rem] items-center'>
       <div className='w-[60rem] flex justify-between my-[1rem] '>
@@ -15,6 +20,11 @@ const Footer: FC  = () => {
         </article>
         <article>
             <p className='text-gray-400 text-[.9rem]'>CollegeDreams takes the burden of your daily school admin activities.</p>
+        </article>
+        <article className='flex mt-4 gap-3'>
+        {icon.map((Icon,i) =>(
+          <Icon key={i} className='text-[1.6rem] text-gray-400 border border-gray-600 rounded-md p-1'/>
+        ))}
         </article>
         </section>
         <div className=' text-gray-400 gap-[.7rem] font-semibold'>
