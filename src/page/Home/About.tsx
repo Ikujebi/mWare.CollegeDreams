@@ -50,7 +50,7 @@ const Clients = () => {
         },
     ]
   return (
-    <div className=' text-gray-400 flex flex-col items-center justify-center  h-[40svh] overflow-none mt-[20rem]'>
+    <div className=' text-gray-400 flex flex-col items-center justify-center  h-[40svh] overflow-none md:mt-[20rem] lg:mt-[20rem] xl:mt-[20rem] 2xl:mt-[20rem] mt-[50rem]'>
         
       
         <section id="kolo" className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[5rem]">
