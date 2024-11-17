@@ -86,10 +86,10 @@ const Testimonials: FC = () => {
 
   return (
     <div className='flex justify-center w-full '>
-    <div className='   mt-[15rem] w-[60rem] 2xl:w-[80rem]'>
+    <div className='   mt-[15rem] w-screen md:w-[60rem] lg:w-[60rem] xl:w-[60rem] 2xl:w-[80rem]'>
     <header className='flex flex-col justify-center items-center'>
         <h1 className='text-3xl'>Testimonials</h1>
-        <p className='text-gray-400 mt-7'>What our clients said about <span className='text-customBlue font-semibold'>CollegeDreams</span> Project.</p>
+        <p className='text-gray-400 mt-7 md:text-[1rem] lg:text-[1rem] xl:text-[1rem] 2xl:text-[1rem] text-[.8rem]'>What our clients said about <span className='text-customBlue font-semibold'>CollegeDreams</span> Project.</p>
         </header>
 
         <main className='mt-[3rem] '>
@@ -104,7 +104,7 @@ const Testimonials: FC = () => {
                     <IoStar /><IoStar /><IoStar /><IoStar /><IoStar />
                   </div>
                   <div className='mt-4 max-w-xs '>
-                    <p className='text-gray-700 text-sm'>{item.testimony}</p>
+                    <p className='text-gray-700 md:text-[.9rem] lg:text-[.9rem] xl:text-[.9rem] 2xl:text-[.9rem] text-[.73rem] md:px-0 xl:px-0 2xl:px-0 px-2 lg:px-0'>{item.testimony}</p>
                   </div>
                   <div className='mt-4 max-w-xs '>
                     <p className='text-gray-700 text-sm'> <span className='text-customBlue font-semibold'>{item.client}</span> {item.office}</p>

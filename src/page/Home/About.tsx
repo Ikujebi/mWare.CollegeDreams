@@ -72,8 +72,8 @@ const Clients = () => {
           </div>
           ))}
         </section>
-        <section className="mt-[11rem] flex justify-center gap-[2rem]">
-            <article className="w-[32%] nunito ">
+        <section className="mt-[11rem] mb-[35rem] md:mb-0 xl:mb-0 2xl:mb-0 lg:mb-0  md:flex lg:flex xl:flex 2xl:flex justify-center gap-[2rem]">
+            <article className="md:w-[32%] lg:w-[32%] xl:w-[32%] 2xl:w-[32%] text-center nunito ">
                 <h2 className="text-black text-3xl">Our Main Services</h2>
                 <p className="">CollegeDreams is one powerful software that contains all the tools needed to run a successful school.</p>
             <div>
@@ -88,8 +88,8 @@ const Clients = () => {
                 ))}
             </div>
             </article>
-            <article className="w-[42%] nunito flex items-center">
-                <img src={laptop} alt=""  className="h-auto"/>
+            <article className="md:w-[42%] lg:w-[42%] xl:w-[42%] 2xl:w-[42%]  nunito flex items-center justify-center">
+                <img src={laptop} alt=""  className="h-auto w-[70%] md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 mb-[10rem]"/>
             </article>
         </section>
     </div>
