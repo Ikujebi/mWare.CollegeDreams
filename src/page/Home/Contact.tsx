@@ -25,11 +25,11 @@ const Contact: FC = () => {
     <div className='   mt-[15rem] w-[60rem] 2xl:w-[80rem]'>
     <header className='flex flex-col justify-center items-center'>
         <h1 className='text-3xl'>Get In Touch !</h1>
-        <p className='text-gray-400 mt-7'>Have Questions about  <span className='text-customBlue font-semibold'>CollegeDreams</span>? Get in Touch Anytime!</p>
+        <p className='text-gray-400 mt-7 text-center'>Have Questions about  <span className='text-customBlue font-semibold'>CollegeDreams</span>? Get in Touch Anytime!</p>
         </header>
 
-        <main className='mt-[3rem] flex gap-5 '>
-        <section className='w-[50%]'>
+        <main className='mt-[3rem] md:flex lg:flex xl:flex 2xl:flex gap-5 '>
+        <section className='md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%]'>
           <h1 className='text-[1.25rem] font-semibold'>Contact Details
           </h1>
 
@@ -59,7 +59,7 @@ const Contact: FC = () => {
           </div>
           </div>
         </section>
-        <section className='w-[50%] flex justify-center'>
+        <section className='md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] flex justify-center'>
           <div className='flex flex-col gap-5 p-[2rem] rounded-md border border-gray-100'>
 <div className='flex gap-5  '>
 <div>
@@ -107,12 +107,12 @@ const Contact: FC = () => {
         </main>
         <footer className='bg-blue-600 flex justify-around items-center h-[11rem] rounded-xl'>
           <div>
-<h2 className='text-white text-3xl mb-[1.3rem]'>Sign up with CollegeDreams today</h2>
-<span className=' text-gray-400 bg-blue-800 shadow-xl pr-1 '>Empowering Education, One Click at a Time.</span>
+<h2 className='text-white md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-[1.12rem] mb-[1.3rem]'>Sign up with CollegeDreams today</h2>
+<span className=' text-gray-400 bg-blue-800 shadow-xl pr-1 md:text-[1.12rem] lg:text-[1.12rem] xl:text-[1.12rem] 2xl:text-[1.12rem] text-[.82rem]'>Empowering Education, One Click at a Time.</span>
           </div>
 
           <div>
-          <button className='bg-white  hover:bg-blue-600 px-[1.5rem] py-[.5rem] rounded-md'>Sign Up</button>
+          <button className='bg-white  hover:bg-blue-600 md:px-[1.5rem] lg:px-[1.5rem] xl:px-[1.5rem] 2xl:px-[1.5rem] px-[.5rem] py-[.5rem] rounded-md'>Sign Up</button>
           </div>
         </footer>
     </div>

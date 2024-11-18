@@ -14,6 +14,7 @@ module.exports = {
       animation: {
         slowRotate: 'slowRotate 3s linear infinite',
       },
+      
     },
   },
   plugins: [],

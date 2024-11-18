@@ -11,7 +11,7 @@ const Footer: FC  = () => {
 
   const icon=[FaFacebookF,FaInstagram,FaXTwitter,AiOutlineMail]
   return (
-    <div className='w-screen flex justify-center transition-all duration-300  bg-[#2E3440] h-[22rem] items-center'>
+    <div className='w-screen md:flex justify-center transition-all duration-300  bg-[#2E3440] h-[22rem] items-center'>
       <div className='w-[60rem] flex justify-between my-[1rem] '>
         <section className='w-[30%]'>
         <article className=' flex gap-2 pb-10 items-center'>
@@ -27,7 +27,7 @@ const Footer: FC  = () => {
         ))}
         </article>
         </section>
-        <div className=' text-gray-400 gap-[.7rem] font-semibold'>
+        <section className=' text-gray-400 md:gap-[.7rem] lg:gap-[.7rem] xl:gap-[.7rem] 2xl:gap-[.7rem] font-semibold'>
           <h1 className='text-white'>
           Newsletter
 
@@ -43,7 +43,7 @@ const Footer: FC  = () => {
    />
   </div>
   <button className='bg-[#333846] flex justify-center items-center shadow-2xl h-[2.5rem] rounded-md w-full text-customBlue hover:text-white hover:bg-customBlue'>Suscribe</button>
-        </div>
+        </section>
         </div>
     </div>
   )
