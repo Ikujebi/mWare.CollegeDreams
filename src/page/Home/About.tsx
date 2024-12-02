@@ -6,6 +6,7 @@ import { MdMailOutline } from "react-icons/md";
 import { FiSmartphone } from "react-icons/fi";
 import { GrDocument } from "react-icons/gr";
 import laptop from '../../assets/images/dashboard.png'
+import rect from '../../assets/images/Rectangle 1.svg'
 
 const Clients = () => {
     const images = [
@@ -50,7 +51,7 @@ const Clients = () => {
         },
     ]
   return (
-    <div className=' text-gray-400 flex flex-col items-center justify-center  h-[40svh] overflow-none md:mt-[20rem] lg:mt-[20rem] xl:mt-[20rem] 2xl:mt-[20rem] mt-[50rem]'>
+    <div className=' text-gray-400 flex flex-col items-center justify-center  h-[40svh] overflow-none md:mt-[20rem] lg:my-[20rem] xl:my-[20rem] 2xl:my-[20rem] mt-[50rem]'>
         
       
         <section id="kolo" className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-[5rem]">
@@ -88,9 +89,21 @@ const Clients = () => {
                 ))}
             </div>
             </article>
-            <article className="md:w-[42%] lg:w-[42%] xl:w-[42%] 2xl:w-[42%]  nunito flex items-center justify-center">
-                <img src={laptop} alt=""  className="h-auto w-[70%] md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 mb-[10rem]"/>
-            </article>
+            <article className="relative md:w-[42%] lg:w-[42%] xl:w-[42%] 2xl:w-[42%] nunito flex items-center justify-center">
+  {/* First image (Background Rectangle) */}
+  <img
+    src={rect}
+    
+    alt="Rectangle background"
+    className="absolute w-[40rem] m ml-[6rem] h-auto md:max-w-none  z-0 opacity-10"
+  />
+  {/* Second image (Laptop) */}
+  <img
+    src={laptop}
+    alt="Laptop"
+    className="h-auto 2x md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 mb-[10rem] z-10 ml-[10rem]"
+  />
+</article>
         </section>
     </div>
   )

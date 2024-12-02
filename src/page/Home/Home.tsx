@@ -52,11 +52,11 @@ const Home: FC = () => {
           <Header isScrolled={isScrolled} /> {/* Pass the scroll state as a prop */}
         </header>
 
-        <main className="md:w-full 2xl:ml-0 ml-[1.4rem] lg:w-[60rem] xl:w-[60rem] 2xl:w-[60rem] md:flex lg:flex xl:flex 2xl:flex items-center mt-[10rem] gap-0">
-  <section className=" md:bg-red-200 flex flex-col ">
+        <main className="md:w-full 2xl:ml-0 ml-[1.4rem] flex lg:w-[60rem] xl:w-[60rem] 2xl:w-[60rem] md:flex lg:flex xl:flex 2xl:flex items-center mt-[10rem] ">
+  <section id='kolo' className=" md:w-[60rem] lg:w-[60rem] xl:w-[60rem] 2xl:w-[60rem] max-w-full  flex flex-col">
     <article className="md:text-[2.6rem] lg:text-[2.6rem] xl:text-[2.6rem] 2xl:text-[2.6rem] font-semibold">
-      <h2 className="">A free and Complete</h2>
-      <h2 className="m-0">enterprise solution for</h2>
+      <h2 className="whitespace-nowrap">A free and Complete</h2>
+      <h2 className="m-0 ">enterprise solution for</h2>
       <h2 className="text-customBlue m-0">Schools</h2>
     </article>
     <article className="py-[2rem] nunito text-gray-400 md:text-[1.01rem] lg:text-[1.01rem] xl:text-[1.01rem] 2xl:text-[1.01rem] text-[.81rem]">
@@ -69,16 +69,16 @@ const Home: FC = () => {
       <button className="hover:bg-customBlue hover:text-white text-customBlue border border-customBlue px-[1.5rem] py-[.5rem] rounded-md">Sign Up</button>
     </article>
   </section>
-  <section className="relative md:bg-red-200 md:mt-[-15rem] ml-[18rem] lg:mt-0 xl:mt-0 2xl:mt-0 flex-shrink-0">
+  <section className="relative md: md:mt-[-15rem] ml-[18rem] lg:mt-0 xl:mt-0 2xl:mt-0 flex-shrink-0">
     <img
       src={rect}
       alt="Rectangle background"
-      className="absolute top-0 w-[150rem] h-auto md:max-w-none md:mt-[-70rem]"
+      className="absolute top-0 md:w-[170rem] opacity-70 w-[150rem] h-auto md:max-w-none md:mt-[-70rem]"
     />
     <img
       src={laptop}
       alt="Laptop dashboard"
-      className="relative z-10 w-[22rem] ml-[8rem] md:w-[50rem] lg:w-[50rem] xl:w-[50rem] 2xl:w-[50rem] max-w-none mx-auto"
+      className="relative z-10 w-[25rem] ml-[4rem]  md:w-[50rem] lg:w-[50rem] xl:w-[50rem] 2xl:w-[50rem] max-w-none mx-auto"
     />
   </section>
 </main>
